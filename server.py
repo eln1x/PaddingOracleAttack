@@ -47,6 +47,7 @@ class ThreadedServer(object):
 
             client.send(response)
             client.close()
+            break
 
           # elif data.startswith("Encrypt:"):
           #   plaintext = data.split("Encrypt:")[1]
