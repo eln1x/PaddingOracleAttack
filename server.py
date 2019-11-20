@@ -47,7 +47,7 @@ class ThreadedServer(object):
 
             client.send(response)
             client.close()
-            break
+            return False
 
           # elif data.startswith("Encrypt:"):
           #   plaintext = data.split("Encrypt:")[1]
@@ -106,4 +106,3 @@ if __name__ == "__main__":
   port_num = 10000
 
   ThreadedServer('',port_num).listen()
-
